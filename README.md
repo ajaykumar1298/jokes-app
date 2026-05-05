@@ -1,17 +1,66 @@
-# React + Vite
+😂 Random Jokes App (React + Axios)
+A fun and responsive Random Jokes App built using React.js and Axios. It fetches jokes from a public API and displays them in a modern card layout with pagination support.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+🚀 Features
+-Fetch random jokes from API
+-Pagination (Next / Previous)
+-Loading state handling
+-Modern UI with Tailwind CSS
+-Fully responsive design
+-Smooth hover animations
 
-Currently, two official plugins are available:
+🛠️ Tech Stack
+-Frontend: React.js (Hooks)
+-HTTP Client: Axios
+-Styling: Tailwind CSS
+-API: FreeAPI Random Jokes
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+📂 Project Structure
+src/
+│── App.jsx
+│── main.jsx
+│── index.css
 
-## React Compiler
+⚙️ Installation & Setup
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+1.Clone the repository
+git clone https://github.com/your-username/random-jokes-app.git
+cd random-jokes-app
 
-## Expanding the ESLint configuration
+2.Install dependencies
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-"# jokes-app" 
+3.Run the project
+npm run dev
+
+🔗 API Endpoint
+https://api.freeapi.app/api/v1/public/randomjokes?page=1
+
+🔄 Pagination Logic
+-Uses page state to manage current page
+-Fetches new jokes whenever page changes
+-Buttons are disabled when:
+    -No previous page
+    -No next page
+    -While data is loading
+
+🧠 Concepts Used
+-React Hooks (useState, useEffect)
+-API handling with Axios
+-Conditional rendering
+-Optional chaining (?.)
+-Responsive UI design
+
+📌 Future Improvements
+-Search jokes
+-Save favorite jokes
+-Categories filter
+-Dark/Light mode toggle
+
+👨‍💻 Author
+Ajay Kumar
+
+⭐ Support
+If you like this project, give it a ⭐ on GitHub!
+
+
